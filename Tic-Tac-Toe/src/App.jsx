@@ -25,6 +25,8 @@ function App() {
 
         if (isWon()) {
           setWinner(player);  // store winner in state
+
+
         } else {
           setPlayer(player === 'X' ? 'O' : 'X');
         }
@@ -35,6 +37,15 @@ function App() {
 
     }
   };
+
+  const resetGame = () => {
+    setPlayer('X');
+    setWinner('');
+    movesRef.current = ["", "", "", "", "", "", "", "", ""]
+
+    const boxes = document.querySelectorAll(".box");
+    boxes.forEach(box => box.innerHTML = "");
+  }
 
 
 
@@ -106,6 +117,8 @@ function App() {
           </div>
 
         </div>
+
+        <button id='btn' onClick={resetGame} style={{display: winner? 'flex' : 'none'}}>Reset the game</button>
 
       </div>
     </>
