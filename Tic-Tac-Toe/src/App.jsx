@@ -51,6 +51,7 @@ function App() {
     boxes.forEach(box => box.innerHTML = "");
   }
 
+  
   function isDraw(){
     if(move_number.current === 9){
       return true;
