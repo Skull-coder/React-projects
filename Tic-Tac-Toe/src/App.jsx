@@ -8,6 +8,8 @@ function App() {
 
   const movesRef = useRef(["", "", "", "", "", "", "", "", ""]);
 
+  const move_number = useRef(0);
+
   const handleClick = (e) => {
     const target = e.target;
 
@@ -22,6 +24,7 @@ function App() {
         target.innerHTML = player;
 
         movesRef.current[parseInt(target.id, 10)] = player;
+        move_number.current += 1;
 
         if (isWon()) {
           setWinner(player);  // store winner in state
@@ -41,13 +44,21 @@ function App() {
   const resetGame = () => {
     setPlayer('X');
     setWinner('');
+    move_number.current = 0;
     movesRef.current = ["", "", "", "", "", "", "", "", ""]
 
     const boxes = document.querySelectorAll(".box");
     boxes.forEach(box => box.innerHTML = "");
   }
 
+  function isDraw(){
+    if(move_number.current === 9){
+      return true;
+    }
+    return false
+  }
 
+  
 
   function isWon() {
     const moves = movesRef.current;
@@ -99,7 +110,7 @@ function App() {
 
         <h1>Tic-Tac-Toe</h1>
         <div className="app">
-          <p><b> {!winner ? `Next player: ${player}` : `${player} Won`}</b></p>
+          <p><b> {!winner ? isDraw() ? `Draw!` : `Next Move ${player}` : `${player} Won`}</b></p>
 
           <div className="board" onClick={handleClick}>
 
@@ -118,7 +129,7 @@ function App() {
 
         </div>
 
-        <button id='btn' onClick={resetGame} style={{display: winner? 'flex' : 'none'}}>Reset the game</button>
+        <button id='btn' onClick={resetGame} style={{display: winner? 'flex' : isDraw() ? 'flex' : 'none'}}>Reset the game</button>
 
       </div>
     </>
