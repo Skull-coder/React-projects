@@ -1,0 +1,35 @@
+#SetTimer {
+    color: white;
+
+    
+}
+
+input {
+    width: 135px;
+    height: 100px;
+    font-size: 80px;
+    background: transparent;
+    color: white;
+    caret-color: rgb(220, 50, 7);
+    border: none;
+    text-align: center;
+
+}
+
+input::placeholder {
+    color: gray;
+    text-align: center;
+    font-size: 80px;
+}
+
+#SetTimer button{
+    position: absolute;
+    bottom: 15px;
+    font-size: 18px;
+    padding: 3px 5px;
+    
+    color: rgb(29, 27, 27);
+    border: none;
+    border-radius: 3px;
+    font-weight: 550;
+}

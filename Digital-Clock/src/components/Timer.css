@@ -1,0 +1,17 @@
+#timer{
+    color: rgb(242, 173, 44);
+    
+}
+
+.buttons{
+    position: absolute;
+    bottom: 12px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons img{
+    height: 40px;
+    cursor: pointer;
+}
