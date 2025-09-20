@@ -94,7 +94,7 @@ h1{
     padding: 5px;
     border-radius: 10px;
     position: absolute;
-    left: 5px;
+    right: 5px;
     top: 5px;
     border: 1px solid white;
 }
