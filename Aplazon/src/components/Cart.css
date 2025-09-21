@@ -1,0 +1,131 @@
+.cartItems{
+    display: flex;
+    gap: 30px;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.product_box{
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+
+.productAmount{
+    display: flex;
+    margin-top: 30px;
+    font-size: 18px;
+    gap: 20px;
+    padding: 10px;
+    background: rgb(225,225,225,0.3);
+    width: max-content;
+    border-radius: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.info p{
+    font-size: 18px;
+    
+}
+
+.deleteproduct{
+    padding-top: 10px;
+}
+
+.deleteproduct button{
+    padding: 5px 15px ;
+    font-size: 18px;
+    font-weight: 550;
+    color: red;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    border: 2px solid gold;
+}
+
+.checkout{
+    width: 100%;
+    height: 300px;
+    background: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkout p{
+    font-size: 20px;
+}
+
+.checkout button{
+    padding: 10px;
+    background: rgb(82, 133, 235);
+    border: 2px solid black;
+
+    font-size: 22px;
+
+}
+
+section {
+  scroll-margin-top: 83px; /* height of your navbar */
+}
+
+#about {
+  background-color: green;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  
+  margin: 20px auto 0px;
+  width: 100%;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#contact {
+  background-color: white;
+  color: black;
+  padding: 40px;
+  text-align: center;
+  
+  
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+#contact h2 {
+  font-size: 2rem;
+ 
+}
+
+#contact p {
+  font-size: 1.1rem;
+ 
+}
+

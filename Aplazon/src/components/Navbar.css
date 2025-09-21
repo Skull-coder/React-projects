@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.703);
+    backdrop-filter: blur(10px);
+    position:fixed;
+    width: 100%;
+    z-index: 10;
+    
+}
+
+nav .info{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    
+}
+nav .info ul li{
+    cursor: pointer;
+}
+
+nav .info ul li:hover{
+    color: whitesmoke;
+}
+
+nav  ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    
+}
+
+nav .search {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;       /* space between input & icon */
+    padding: 10px;
+    background: rgba(222, 222, 222, 0.416);
+    border-radius: 25px;
+    border: 1px solid white;
+    justify-content: flex-start; /* instead of space-between */
+    
+}
+
+nav .search input{
+   padding: 5px;
+  
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    
+}
+
+
+nav .cart{
+    margin: 20px;
+}
+
