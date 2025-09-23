@@ -36,7 +36,7 @@ main{
 }
 
 .product{
-    background: rgba(177, 177, 233, 0.542);
+    background: rgb(221, 221, 221);
     padding: 20px;
     width: max-content;
     border: 2px solid #ffffff;
@@ -54,7 +54,7 @@ main{
     align-items: center;
     justify-content: center;
     position: relative;
-    background: rgba(10, 10, 101, 0.627);
+    background: rgba(208, 208, 208, 0.373);
     border: 2px solid black;
     border-radius: 10px;
     margin-bottom: 20px;

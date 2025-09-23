@@ -1,5 +1,5 @@
 .app {
   min-height: 100vh; /* full page height */
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  background: rgb(220, 220, 220);
   position: relative;
 }
