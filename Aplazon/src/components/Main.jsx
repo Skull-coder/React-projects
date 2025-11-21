@@ -22,7 +22,7 @@ const Main = ({setShowCart}) => {
     };
 
     useEffect(() => {
-        fetch("https://dummyjson.com/products")
+        fetch("https://dummyjson.com/producs")
             .then(res => res.json())
             .then(data => {
                 setProducts(data.products);
